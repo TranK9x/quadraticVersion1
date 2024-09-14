@@ -1,9 +1,6 @@
 
 #include <cmath>      // provides 'sqrt' module
 #include <iostream>
-//#include <typeinfo>
-//using namespace std;
-
 
 void welcome();
 void input_data(double &a, double &b, double &c);
@@ -19,9 +16,7 @@ void validate_input(double &a);
 
 int main()
 {
-    /*double f;
-    std::cin >> f;
-    std::cout << typeid(f).name() << std::endl;*/
+   
     double a, b, c;       // coefficients of Ax^2 + Bx + C = 0
     double root1, root2;  // roots of the equation
     double discriminant;  // (b*b) + (4*a*c)
@@ -93,7 +88,7 @@ void roots_calculation(double a, double b, double c,
     }
 }
 //
-//this function will caculate the discriminant
+//this module will caculate the discriminant
 //
 void calculation_discriminant(double a, double b, double c, double &discriminant) {
     discriminant = (b * b) - (4 * a * c);
@@ -126,7 +121,7 @@ void output_results(double a, double b, double c,
     
 }
 //
-// continue or exit after giving user the result.
+// this module will ask user to continue or exit after giving user the result.
 //
 void continue_exit() {
     int num;
@@ -144,7 +139,7 @@ void continue_exit() {
 }
 
 //
-//this module use to validate inputs
+//this module validate inputs
 //
 void validate_input(double &a) {
     while (true) {
